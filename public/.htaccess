@@ -1,0 +1,26 @@
+
+text/x-generic .htaccess ( ASCII text, with CRLF line terminators )
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+<IfModule mod_negotiation.c>
+Options -MultiViews -Indexes
+</IfModule>
+
+RewriteEngine On
+    
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://www.sayjar.aslamandmakkah.com/$1 [L,R=301]
+
+# RewriteCond %{HTTP_HOST} ^sayjar.aslamandmakkah.com [NC]
+# RewriteRule ^(.*)$ https://www.sayjar.aslamandmakkah.com/$1 [L,R=301]
+
+# Handle Authorization Header
+RewriteCond %{HTTP:Authorization} .
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Handle Front Controller...
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+</IfModule>

@@ -1,0 +1,55 @@
+ .filter-container {
+ padding: 10px;
+ /* background-color: #f0f0f0; */
+ box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+ border-radius: 76px;
+ border: 1px solid rgb(194, 196, 199);
+ margin-bottom: 40px;
+ padding=b: 0;
+ }
+
+        .filter-select {
+            width: 150px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            font-size: 13px;
+            padding: 0px 10px;
+            height: 30px;
+        }
+
+        .filter-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .filter-heading {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .filter-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.filter-container li {
+    list-style: none;
+}
+
+button#applyFilterButton {
+    margin-top: 20px;
+    border-radius: 30px;
+    background: #fcaf17;
+    margin-right: 29px;
+}
+
+.filter-container input {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 43px;
+    padding-left: 10px;
+    height: 30px;
+}

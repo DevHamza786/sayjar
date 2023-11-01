@@ -1,0 +1,1 @@
+[01-Sep-2023 10:50:57 UTC] PHP Fatal error:  Cannot redeclare App\Http\Controllers\StaticPageController::privacy_policy() in /home2/aslamand/sayjar/app/Http/Controllers/StaticPageController.php on line 26
